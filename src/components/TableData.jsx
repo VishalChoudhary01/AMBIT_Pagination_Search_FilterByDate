@@ -59,6 +59,7 @@ const exportToExce=()=>{
   xlsx(data,settings)
 }
   return (
+    
     <section className="p-4">
       <section className="py-2  rounded border-r border-b shadow-md shadow-gray-200  ">
         <section className="w-full flex justify-end  gap-x-2 px-2">
@@ -112,7 +113,6 @@ const exportToExce=()=>{
                 inputValue={choosenEndDate}
               />
             </section>
-            <section></section>
           </section>
           <table className="w-full mt-6">
             <thead>
@@ -130,7 +130,7 @@ const exportToExce=()=>{
               {rendered_items.map((policy) => (
                 <tr
                   key={policy_ID_Number}
-                  className="text-center border-b-2 border-gray-300 text-[0.8em] font-semibold "
+                  className="text-center border-b-2 hover:bg-stone-200  cursor-pointer transition-all border-gray-300 text-[0.8em] font-semibold "
                 >
                   <td className="py-2 flex justify-center ">
                     <FaRegFilePdf className="text-lg" />
